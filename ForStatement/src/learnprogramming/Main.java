@@ -26,7 +26,7 @@ public class Main {
 
     //Prime number function evenly or by itself. Whole number greater than 1
     public static boolean isPrime(int n){
-        if( n == 1){
+        if( n == 0){
             return false;
         }
         for (int i = 2; i<= n/2; i++){
