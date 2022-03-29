@@ -1,6 +1,7 @@
 package learnprogramming;
 
 public class SumOddRange {
+    //function is odd number
     public static boolean isOdd(int number) {
         if (number % 2 > 0) {
             return true;

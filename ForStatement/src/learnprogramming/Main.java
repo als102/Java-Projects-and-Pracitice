@@ -1,5 +1,7 @@
 package learnprogramming;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,6 +17,14 @@ public class Main {
 //        for (int i = 8; i > 1; i--) {
 //            System.out.println( "10,000 at " +i+ "% interest = " + String.format("%.2f",calculateInterest(10000.00, i)));
 //        }
+//        //Array practice with user input
+//        String day[] = {"Monday","Tuesday","Wednsday","Thursday", "Friday", "Saturday", "Sunday"};
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Enter a number for the day of the Week ");
+//        int index = input.nextInt();
+//        input.close();
+//        System.out.println("Day: "+ day[index-1]);
+
         int count = 0;
         for (int i = 10; i < 50; i++) {
             if (isPrime(i)) {
@@ -45,6 +55,9 @@ public class Main {
 
         System.out.println(SumOddRange.isOdd(22));
         System.out.println(SumOddRange.sumOdd(100,100));
+
+         double ltv = LoanToValue.LonaToValueCalculator(800000,110000000);
+        System.out.println(ltv);
     }
 
     public static double calculateInterest(double amount, double interestRate) {
