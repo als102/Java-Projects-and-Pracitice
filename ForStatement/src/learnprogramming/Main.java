@@ -5,6 +5,21 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        double fidelity = 500;
+        double m1 = 400;
+        double scribd = 300;
+        double savingAmex = 25;
+        double crypto = 125;
+        double investments = fidelity+m1+savingAmex+crypto+scribd;
+        double chaseCar = 950; // credit cards
+        double bills = 559; //netflix,game pass,tax bill,verizon
+        double loans = 497; // mattress , car chase, m1
+
+
+
+
+         double april = MonthlyCalc.monthlyBills(investments,chaseCar,bills,loans);
+        System.out.println("Total April Bill = "+ april);
 
         // System.out.println("10,000 at 2% interest= " + calculateInterest(10000.00, 2.0) + " dollars");
         /***
@@ -67,7 +82,48 @@ public class Main {
         System.out.println(" ");
         text = "HelloWorld";
         addSpaces(text);
-    }
+
+        //while loop
+        //Create the variable first above the loop
+        int counting = 6;
+        while (counting != 6) {
+            System.out.println("Count value is " + counting);
+            counting++;
+        }
+
+        while(true){
+            if (counting == 6) {
+                break;
+            }
+            System.out.println("Count Value is "+ count);
+            counting++;
+        }
+        //Do while loop at least once
+        do{
+            System.out.println("Count Value is " + counting);
+            counting++;
+        }while (counting !=7);
+        System.out.println(SumOddRange.isEven(10));
+
+        int number = 4;
+        int finishNumber = 20;
+        int evenNumberFound = 0;
+
+        while (number <= finishNumber) {
+            number++; // adds to the number thru each loop
+            if (!SumOddRange.isEven(number)) {
+                continue;  //bypass print statement or following code and restarts the loop
+            }
+            System.out.println("Even number " + number);
+            evenNumberFound++;
+            if (evenNumberFound >= 5) {
+                break;
+            }
+        }
+        System.out.println("Total even numbers found = " +evenNumberFound);
+
+
+}
 
     public static double calculateInterest(double amount, double interestRate) {
         return (amount * (interestRate / 100));

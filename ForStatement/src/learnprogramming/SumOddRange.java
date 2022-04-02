@@ -7,6 +7,12 @@ public class SumOddRange {
             return true;
         } else return false;
     }
+    public static boolean isEven(int number){
+        if(number % 2 ==0){
+            return true;
+        }else
+            return false;
+    }
 
     public static int sumOdd(int start, int end) {
         int sum = 0;
@@ -20,4 +26,6 @@ public class SumOddRange {
         } else
             return -1;
     }
+
+
 }
