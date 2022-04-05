@@ -1,25 +1,32 @@
 package learnprogramming;
 
+import java.text.DecimalFormat;
+
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
-//        System.out.println("The sum of the digits in 1980 is " + sumDigits(1980));
-//        System.out.println(isPalindrome(-1221));
-//        sumFirstAndLastDigit(15);
-//        int getEven = getEvenDigitSum(123456789);
-//        System.out.println(getEven);
-//        boolean shared = hasSharedDigit(15, 55);
-//        // System.out.println(shared);
-//        boolean sameLast = hasSameLastDigit(11, 22, 31);
-//        System.out.println(sameLast);
-//        int greatestDivisor = getGreatestCommonDivisor(25, 15);
-//        System.out.println(greatestDivisor);
+        System.out.println("The sum of the digits in 1980 is " + sumDigits(1980));
+        System.out.println(isPalindrome(-1221));
+        sumFirstAndLastDigit(15);
+        int getEven = getEvenDigitSum(123456789);
+        System.out.println(getEven);
+        boolean shared = hasSharedDigit(15, 55);
+        // System.out.println(shared);
+        boolean sameLast = hasSameLastDigit(11, 22, 31);
+        System.out.println(sameLast);
+        int greatestDivisor = getGreatestCommonDivisor(25, 15);
+        System.out.println(greatestDivisor);
 
-       //  FactorPrinter.printFactors(10);
-//         boolean perfect = PerfectNumber.isPerfectNumber(0);
-//        System.out.println(perfect);
+         FactorPrinter.printFactors(10);
+         boolean perfect = PerfectNumber.isPerfectNumber(0);
+        System.out.println(perfect);
         NumberToWords.numberToWords(4000);
+        DiagonalStar.printSquareStar(5);
+      double savingsCalc =   SavingsRate.calcSavingsRate(3080,10500);
+        DecimalFormat format = new DecimalFormat("0.#"); //format the price to remove the decimal
+
+        System.out.println("My monthly savings rate is "+format.format(savingsCalc) + "%");
 
     }
 
